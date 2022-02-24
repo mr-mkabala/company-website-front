@@ -1,0 +1,21 @@
+.services {
+    @include flex-center-all;
+    @include top-85;
+    flex-direction: column;
+}
+
+.services-block {
+    @include flex-center-all;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    width: 100%;
+}
+
+.services-img {
+    height: 40%;
+    width: 40%;
+}
+
+.services-header {
+    margin: 1rem 0;
+}

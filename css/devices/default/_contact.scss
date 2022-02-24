@@ -1,0 +1,31 @@
+@media only screen and (min-device-width: 992px) {
+
+    .contact-form {
+        padding: 0 15%;
+    }
+
+    @keyframes contact-btn-animate {
+        from {
+            background-color: $black;
+            border: 3px solid $white;
+        }
+
+        to {
+            background-color: $red;
+            border: 3px solid $red;
+        }
+    }
+
+    @keyframes contact-btn-animate-out {
+        from {
+            background-color: $red;
+            border: 3px solid $red;
+        }
+
+        to {
+            background-color: $black;
+            border: 3px solid $white;
+        }
+    }
+
+}

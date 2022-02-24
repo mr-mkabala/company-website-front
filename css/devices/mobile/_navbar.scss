@@ -1,0 +1,61 @@
+.navigation-bar {
+    background-color: $black;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-toggler {
+    color: transparent;
+    padding: 0;
+}
+
+.navbar-collapse {
+    @include flex-center-all;
+}
+
+.nav-item {
+    @include flex-center-all;
+    height: 25%;
+    width: 100%;
+}
+
+.navbar-nav {
+    height: calc(100vh - 85px);
+    width: 100%;
+}
+
+.nav-link {
+    color: $white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.link-1:hover {
+    color: $red;
+}
+
+.link-2:hover {
+    color: $green;
+}
+
+.link-3:hover {
+    color: $yellow;
+}
+
+.link-4:hover {
+    color: $blue;
+}
+
+.nav-link:focus {
+    color: $white;
+}

@@ -1,0 +1,120 @@
+// Color variables
+
+$black: #101010;
+$blue: #118AB2;
+$green: #06D6A0;
+$red: #EF476F;
+$white: #FCFCFC;
+$yellow: #FFD166;
+
+// Mixins
+
+@mixin flex-center-all {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin top-85 {
+    position: relative;
+    top: 85px;
+    width: 100%;
+}
+
+// Root elements
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $black;
+    color: $white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+footer {
+    @include top-85;
+    padding: 1rem 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer p a:hover {
+    color: $red;
+    transition: color 0.5s;
+}
+
+.msg-box {
+    @include flex-center-all;
+    flex-direction: column;
+    height: 100vh
+}
+
+.link-200:hover {
+    color: $green;
+    transition: color 0.5s;
+}
+
+.link-500:hover {
+    color: $red;
+    transition: color 0.5s;
+}
+
+@media only screen and (min-device-width: 768px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.35rem;
+    }
+
+    footer p {
+        font-size: 1.15rem;
+    }
+
+}
+
+@import 'devices/mobile/index';
+@import 'devices/tablet/index';
+@import 'devices/default/index';

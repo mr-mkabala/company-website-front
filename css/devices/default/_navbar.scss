@@ -1,0 +1,22 @@
+@media only screen and (min-device-width: 992px) {
+
+    .navbar-collapse {
+        @include flex-center-all;
+    }
+
+    .nav-item {
+        padding: 0 2rem;
+        width: auto;
+    }
+
+    .navbar-nav {
+        @include flex-center-all;
+        height: auto;
+        width: 100%;
+    }
+
+    .nav-link:hover {
+        transition: color 0.5s;
+    }
+
+}

@@ -1,0 +1,36 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 85px);
+    @include top-85;
+}
+
+.landing-page-images,
+.landing-page-text {
+    display: flex;
+    height: 50%;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.landing-page-images {
+    justify-content: center;
+    position: relative;
+}
+
+.landing-page-img {
+    width: 80%;
+    min-width: 300px;
+    position: absolute;
+    bottom: -15px;
+}
+
+.landing-page-text {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.landing-page-paragraph {
+    margin-top: 1rem;
+}

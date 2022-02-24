@@ -1,0 +1,41 @@
+@media only screen and (min-device-width: 992px) {
+
+    .landing-page {
+        display: flex;
+        flex-direction: row;
+        height: calc(100vh - 85px);
+        padding: 0 5%;
+        @include top-85;
+    }
+
+    .landing-page-images,
+    .landing-page-text {
+        display: flex;
+        height: 100%;
+        padding: 0;
+        width: 100%;
+        transform: translateY(-42.5px);
+    }
+
+    .landing-page-images {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .landing-page-img {
+        width: 80%;
+        min-width: 400px;
+        position: relative;
+        bottom: 0;
+    }
+
+    .landing-page-text {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .landing-page-paragraph {
+        text-align: left;
+    }
+
+}

@@ -1,0 +1,23 @@
+@media only screen and (min-device-width: 992px) {
+
+    .portfolio-text {
+        padding: 5rem 15%;
+    }
+
+    .portfolio-header {
+        margin-bottom: 0;
+    }
+
+    .portfolio-description {
+        padding: .5rem 15%;
+    }
+
+    .shakerr-screen-tablet {
+        display: none;
+    }
+
+    .shakerr-screen-default {
+        display: flex;
+    }
+
+}

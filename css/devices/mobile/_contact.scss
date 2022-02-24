@@ -1,0 +1,51 @@
+.contact {
+    @include flex-center-all;
+    @include top-85;
+    flex-direction: column;
+    padding: 3rem 2rem;
+}
+
+.contact-form,
+.contact-input,
+.contact-message,
+.contact-btn {
+    width: 100%;
+}
+
+.contact-input,
+.contact-message {
+    background-color: $black;
+    border: none;
+    border-bottom: 3px solid $white;
+    color: $white;
+    margin: 1rem 0;
+    padding: .5rem;
+}
+
+.contact-input::placeholder,
+.contact-message::placeholder {
+    color: $white;
+}
+
+.contact-input:focus,
+.contact-message:focus {
+    outline: none;
+}
+
+.contact-message {
+    resize: none;
+}
+
+.contact-btn {
+    background-color: $black;
+    border: 3px solid $white;
+    color: $white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.contact-btn:focus {
+    background-color: $white;
+    color: $black;
+}

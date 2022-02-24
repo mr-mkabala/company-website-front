@@ -1,0 +1,71 @@
+.portfolio {
+    @include flex-center-all;
+    @include top-85;
+    flex-direction: column;
+}
+
+.portfolio-text {
+    padding: 3rem 2rem;
+}
+
+.portfolio-header {
+    margin-bottom: 1rem;
+}
+
+.portfolio-description {
+    margin-bottom: .5rem;
+    padding: .5rem 3rem;
+}
+
+.portfolio-description a {
+    color: $white;
+    text-decoration: none;
+}
+
+.shakerr-header,
+.shakerr-header a {
+    color: $blue;
+    margin: 2rem 0 3rem;
+    text-decoration: none;
+}
+
+.shakerr-screen-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.shakerr-screen-mobile {
+    display: flex;
+    margin-top: 2rem;
+    width: 60%;
+}
+
+.shakerr-screen-tablet {
+    display: none;
+    margin: 2rem 0;
+    width: 70%;
+}
+
+.shakerr-screen-default {
+    display: none;
+    margin: 2rem 0;
+    width: 70%;
+}
+
+.shakerr-quotation-mark,
+.shakerr-quotation-mark-2 {
+    height: 10%;
+    max-height: 30px;
+    width: 10%;
+    max-width: 30px;
+    margin: 0 5%;
+}
+
+.shakerr-quotation-mark-2 {
+    transform: rotate(180deg);
+}
+
+.shakerr-description {
+    margin: 2rem 0;
+}
